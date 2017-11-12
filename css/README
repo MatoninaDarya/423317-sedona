@@ -1,8 +1,8 @@
 input #in {
     background-image: url(file:///C:/Users/User/Documents/GitHub/423317-sedona/svg-sedona/calendar.svg);
     background-repeat: no-repeat;
-    background-position: 4px;}
+    background-position: 315px;}
   input #out {
         background-image: url(file:///C:/Users/User/Documents/GitHub/423317-sedona/svg-sedona/calendar.svg);
         background-repeat: no-repeat;
-        background-position: 4px;}
+        background-position: 315px;}
