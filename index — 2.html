@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+  <header class="main-header">
+      <nav class="main-navigation">
+        <a class="city-logo"><img src="/svg-sedona/background_photo.jpg" alt="Логотип города SEDONA" width="137" height="70"></a>
+      <ul class="site-navigation">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="photo.html">Фото и видео</a></li>
+        <li><a href="map.html">Карта штата</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+</header>
+  <main>
+    <section class="choose-hotel">
+      <h1 class="visually-hidden">Выбор отеля</h1>
+      <div class="blur-and-choice">
+        <form action="#" method="get" class="form-1">
+          <p>Инфаструктура</p>
+          <label for="pool-1">Бассейн</label><input type="checkbox" name="pool" id="pool-1" checked>
+          <label for="parking-1">Парковка</label><input type="checkbox" name="parking" id="parking-1">
+          <label for="wi-fi-1">Wi-Fi</label><input type="checkbox" name="wi-fi" id="wi-fi-1">
+        </form>
+        <form action="#" method="get" class="form-2">
+          <p>Тип жилья</p>
+          <label for="hotel-1">Гостиница</label><input type="checkbox" name="hotel" id="hotel-1" checked>
+          <label for="motel-1">Мотель</label><input type="checkbox" name="motel" id="motel-1">
+          <label for="apartments-1">Апартаменты</label><input type="checkbox" name="apartments" id="apartments-1">
+        </form>
+        <form action="#" method="post" class="form-3">
+          <label for="price-1">Стоимость в сутки(Р)</label><input type="text" name="price" id="price-1">
+          <input type="range" min="0" max="5000" step="10" value="3000" name="price-range" id>
+          <button>Показать</button>
+        </form>
+      </div>
+    </section>
+    <section class="search-results">
+      <h2>Найдено</h2>
+      <input type="number" name="number-of-hotels" id="nmber-of-hotels1"><!---<output>?--->
+      <ul class="filters-items">
+        <p>Сортировка</p>
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По рейтингу</a></li>
+      </ul>
+      <section class="options">
+        <h2 class="visually-hidden">Варианты отелей</h2>
+        <ul>
+          <li><div class="one-option">
+            <img src="#">
+            <h3>Amara ResortSPA</h3>
+            <p>Гостиница</p>
+            <p>от 4000р.</p>
+            <button class="more-info">Подробнее</button>
+            <button class="more-info">Забронировать</button>
+            <div class="rating">
+              <img src="#">
+              <p>Рейтинг:8,5</p>
+            </div>
+          </div></li>
+          <li><div class="one-option">
+            <img src="#">
+            <h3>Desert Quail INN</h3>
+            <p>Мотель</p>
+            <p>от 3000р.</p>
+            <button class="more-info">Подробнее</button>
+            <button class="more-info">Забронировать</button>
+            <div class="rating">
+              <img src="#">
+              <p>Рейтинг:8,9</p>
+            </div>
+          </div></li>
+          <li><div class="one-option">
+            <img src="#">
+            <h3>Villas at Poco Diablo</h3>
+            <p>Апартаменты</p>
+            <p>от 2000р.</p>
+            <button class="more-info">Подробнее</button>
+            <button class="more-info">Забронировать</button>
+            <div class="rating">
+              <img src="#">
+              <p>Рейтинг:9,2</p>
+            </div>
+          </div></li>
+        </ul>
+     </section>
+    </section>
+  </main>
+  <footer>
+    <span class="insta">#visitsedna</span>
+    <div class="social-links">
+      <a href="#">
+        <img src="/svg-sedona/twitter.svg" alt="Twitter">
+      </a>
+      <a href="#">
+        <img src="#" alt="Vkontakte">
+      </a>
+      <a href="#">
+        <img src="/svg-sedona/youtube.svg" alt="YouTube">
+      </a>
+    </div>
+    <div class="htmlacademy">
+      <span>website by</span>
+      <a href="https://htmlacademy.ru/"><img src="file:///C:/Users/User/Documents/GitHub/423317-sedona/svg-sedona/logo-htmlacademy.svg" alt="html academy"></a>
+    </div>
+  </footer>
+</body>
+</html>
