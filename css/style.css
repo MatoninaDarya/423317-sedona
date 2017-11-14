@@ -1,3 +1,18 @@
+body{
+  text-transform: uppercase;
+  font-family: PT Sans, Arial, sana-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #f2f2f2;
+  display: block;
+}
+header{
+  
+}
+
+
+
 input #in {
     background-image: url(file:///C:/Users/User/Documents/GitHub/423317-sedona/svg-sedona/calendar.svg);
     background-repeat: no-repeat;
