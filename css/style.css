@@ -14,7 +14,11 @@ body{
   box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
   background-color: #ffffff;
 }
-
+.features-1 .align-left{
+  width: 400px;
+  height: 256px;
+  background-color: #81b3d2;
+}
 header{
 width: 1200%;
 background-color:
