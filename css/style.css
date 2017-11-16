@@ -7,17 +7,50 @@ body{
   background-color: #f2f2f2;
   display: block;
 }
-header{
-
+.container{
+  display: inline-block;
+  width: 1200px;
+  vertical-align: top;
+  box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+  background-color: #ffffff;
 }
 
-
-
-input name=[date-in] {
-    background-image: url(file:///C:/Users/User/Documents/GitHub/423317-sedona/svg-sedona/calendar.svg);
-    background-repeat: no-repeat;
-    background-position: 315px;}
-  input nae=[date-out] {
-        background-image: url(file:///C:/Users/User/Documents/GitHub/423317-sedona/svg-sedona/calendar.svg);
-        background-repeat: no-repeat;
-        background-position: 315px;}
+header{}
+/*формы с календариком с главной страницы*/
+.input-with-icon1{
+  width: 346px;
+  border: none;
+  outline: none;
+  min-height: 39px;}
+input[name="date-in"] {
+    width: 307px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    vertical-align: middle;
+  background-color: #f2f2f2;}
+input [value="calendar"] {
+  width: 39px;
+  height: 39px;
+  border: none;
+  background: url(img/svg-sedona/calendar.svg) no-repeat 70% 70%;
+background-color: #f2f2f2;}
+.input-with-icon1{
+  width: 346px;
+  border: none;
+  outline: none;
+  min-height: 39px;}
+input[name="date-in"] {
+    width: 307px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    vertical-align: middle;
+  background-color: #f2f2f2;}
+input [value="calendar"] {
+  width: 39px;
+  height: 39px;
+  border: none;
+  background: url(img/svg-sedona/calendar.svg) no-repeat 70% 70%;
+background-color: #f2f2f2;}
+/*формы с календариком с главной страницы - end*/
