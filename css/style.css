@@ -1,28 +1,103 @@
 body{
-  text-transform: uppercase;
-  font-family: PT Sans, Arial, sana-serif;
-  font-size: 14px;
-  line-height: 24px;
-  color: #000000;
-  background-color: #f2f2f2;
-  display: block;
+  min-width: 800px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: PT Sans,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+    background-color: #f2f2f2;
 }
 .container{
-  display: inline-block;
-  width: 1200px;
-  vertical-align: top;
-  box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
-  background-color: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 786px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 15px 5px rgba(0,0,0,.2);
 }
+header{
+display: inline-block;
+width: 1200;
+}
+.mountains::before{
+  content:"";
+  width: 1200px;
+  height: 57px;
+  background: url(img/figure border.png) no-repeat;
+}
+
+ul{
+  list-style-type: none;
+  display: block;
+}
+.visually-hidden{
+  display: none;
+}
+.site-navigation li{
+  display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    text-align: center;
+    font-family: PT Sans,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+}
+.slogan{
+  width: 640px;
+    padding: 0 75px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
 .features-1 .align-left{
   width: 400px;
   height: 256px;
   background-color: #81b3d2;
+  float: left;
 }
-header{
-width: 1200%;
-background-color:
+.features-1 .align-left .note{
+  width: 70%;
+  margin: 0 auto;
+  color: white;
 }
+.align-left .note h3{
+    margin-top: 54px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    font-size: 21px;
+}
+.align-left .note p{
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.align-left .note p:last-of-type{
+  margin-bottom: 60px;
+}
+.photo-1{
+  width: 1200px;
+}
+.items-with-icons{
+   margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+.items-with-icons li:first-of-type{
+  width: 400px;
+    float: left;
+}
+
+
 /*формы с календариком с главной страницы*/
 .input-with-icon1{
   width: 346px;
