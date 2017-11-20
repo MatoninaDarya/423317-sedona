@@ -18,7 +18,7 @@ body{
     max-width: 1200px;
     width: 100%;
     background-color: #fff;
-    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 0 15px 5px rgba(0,0,0,.2);
 }
 header{
 display: inline-block;
@@ -28,7 +28,7 @@ width: 1200;
   content:"";
   width: 1200px;
   height: 57px;
-  background: url(img/figure border.png) no-repeat;
+  background: url(".../img/figure border.png") no-repeat;
 }
 
 ul{
@@ -115,7 +115,7 @@ input [value="calendar"] {
   width: 39px;
   height: 39px;
   border: none;
-  background: url(img/svg-sedona/calendar.svg) no-repeat 70% 70%;
+  background: url(../img/svg-sedona/calendar.svg) no-repeat 70% 70%;
 background-color: #f2f2f2;}
 .input-with-icon1{
   width: 346px;
@@ -133,6 +133,6 @@ input [value="calendar"] {
   width: 39px;
   height: 39px;
   border: none;
-  background: url(img/svg-sedona/calendar.svg) no-repeat 70% 70%;
+  background: url(../img/svg-sedona/calendar.svg) no-repeat 70% 70%;
 background-color: #f2f2f2;}
 /*формы с календариком с главной страницы - end*/
