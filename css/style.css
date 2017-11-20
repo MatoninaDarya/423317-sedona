@@ -30,10 +30,18 @@ width: 1200;
   height: 57px;
   background: url(".../img/figure border.png") no-repeat;
 }
-
 ul{
   list-style-type: none;
   display: block;
+}
+a{
+  text-decoration: none;
+}
+
+.items-without-icons{
+  display: block;
+  max-width: 1200px;
+  background-color: #f2f2f2;
 }
 .visually-hidden{
   display: none;
@@ -54,7 +62,7 @@ ul{
     margin: 0 auto;
     background-color: #fff;
 }
-
+/*синие блоки*/
 .features-1 .align-left{
   width: 400px;
   height: 256px;
@@ -84,19 +92,57 @@ ul{
 .align-left .note p:last-of-type{
   margin-bottom: 60px;
 }
-.photo-1{
-  width: 1200px;
+.align-right{
+  width: 400px;
+  height: 256px;
+  background-color: #81b3d2;
+  float: right;
 }
+.align-right .note{
+  width: 70%;
+  margin: 0 auto;
+  color: white;
+}
+.align-right .note h3{
+    margin-top: 54px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    font-size: 21px;
+}
+.align-right .note p{
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.align-right .note p:last-of-type{
+  margin-bottom: 60px;
+}
+/* синие блоки всё*/
 .items-with-icons{
    margin: 0;
     padding: 0;
     background-color: #fff;
 }
-.items-with-icons li:first-of-type{
-  width: 400px;
-    float: left;
+.items-with-icons h3{
+font-size: 21px;
 }
 
+.search-form-title button{
+background-color: #766357;
+width: 568px;
+margin: 0 auto;
+padding: 30px 0;
+font-size: 21px;
+font-weight: 700;
+line-height: 26px;
+color: #fff;
+text-decoration: none;
+text-transform: uppercase;
+}
 
 /*формы с календариком с главной страницы*/
 .input-with-icon1{
@@ -115,7 +161,7 @@ input [value="calendar"] {
   width: 39px;
   height: 39px;
   border: none;
-  background: url(../img/svg-sedona/calendar.svg) no-repeat 70% 70%;
+  background: url("../img/svg-sedona/calendar.svg") no-repeat 70% 70%;
 background-color: #f2f2f2;}
 .input-with-icon1{
   width: 346px;
@@ -133,6 +179,38 @@ input [value="calendar"] {
   width: 39px;
   height: 39px;
   border: none;
-  background: url(../img/svg-sedona/calendar.svg) no-repeat 70% 70%;
+  background: url("../img/svg-sedona/calendar.svg") no-repeat 70% 70%;
 background-color: #f2f2f2;}
 /*формы с календариком с главной страницы - end*/
+footer{margin: 0;
+    padding: 0;
+    background: rgba(255,255,255,.9);
+    text-align: center;}
+footer span{
+  margin: 47px 0;
+font-size: 21px;
+font-weight: 700;
+line-height: 26px;
+width: 33.33%; /*до введения флексов*/
+float: left;/*до введения флексов*/
+}
+.social-links {
+  padding-top: 36px;
+  width: 33.33%;
+  float: left;
+}
+.social-links a{
+display: inline-block;
+vertical-align: top;
+margin: 0;
+padding: 0;
+width: 46px;
+height: 48px;
+margin-right: 5px;
+background: #81b3d2;
+color: #fff;
+text-decoration: none;}
+.htmlacademy{
+  width: 33.33%;
+  float: left;
+}
