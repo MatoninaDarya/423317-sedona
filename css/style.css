@@ -24,7 +24,7 @@ header{
 display: inline-block;
 width: 1200;
 }
-.mountains::before{
+.mountains::after{
   content:"";
   width: 1200px;
   height: 57px;
@@ -37,6 +37,12 @@ ul{
 a{
   text-decoration: none;
 }
+.site-navigation a:hover{
+  color: #81b3d2;
+}
+.site-navigation a:active{
+  color: #766357;
+}
 
 .items-without-icons{
   display: block;
@@ -46,15 +52,32 @@ a{
 .visually-hidden{
   display: none;
 }
+.site-navigation{
+padding: 0;
+margin: 0;
+font-size: 0;
+}
 .site-navigation li{
   display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    text-align: center;
-    font-family: PT Sans,Arial,sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 26px;
+  vertical-align: top;
+  list-style: none;
+  list-style-type: none;
+  list-style-position: initial;
+  list-style-image: initial;
+  width: 20%;
+  text-align: center;
+  font-family: PT Sans,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.city-logo{
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    left: 50%;
+    margin-left: -69px;
 }
 .slogan{
   width: 640px;
@@ -130,8 +153,20 @@ a{
 .items-with-icons h3{
 font-size: 21px;
 }
-
-.search-form-title button{
+div .forma{
+  position: absolute;
+    width: 458px;
+    padding: 55px;
+    padding-top: 55px;
+    padding-right: 55px;
+    padding-bottom: 55px;
+    padding-left: 55px;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 10px 10px 5px rgba(0,0,0,.1);
+    font-weight: 700;
+}
+button.braun{
 background-color: #766357;
 width: 568px;
 margin: 0 auto;
@@ -142,45 +177,114 @@ line-height: 26px;
 color: #fff;
 text-decoration: none;
 text-transform: uppercase;
+border: none;
 }
+button .braun:hover{
+  background-color: #604e43;
+}
+button .braun:active{
+  background-color: #503e33;
+}
+input.blue{
+  display: block
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  background-color: #81b3d2;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  border: none;
+  outline: none;
+}
+input.blue.find{
+  width: 457px;
+  height: 58px;
+}
+
 
 /*формы с календариком с главной страницы*/
 .input-with-icon1{
-  width: 346px;
+  width: 345px;
   border: none;
   outline: none;
-  min-height: 39px;}
+  min-height: 38px;}
 input[name="date-in"] {
-    width: 307px;
-    border: none;
-    outline: none;
+  width: 307px;
+      max-height: 38px;
+      border: none;
+      outline: none;
+      text-transform: uppercase;
+      padding: 12px;
+      font-weight: 700;
     -webkit-appearance: none;
     vertical-align: middle;
   background-color: #f2f2f2;}
-input [value="calendar"] {
-  width: 39px;
-  height: 39px;
+input [name="calendar-1"] {
+  width: 38px;
+  height: 38px;
   border: none;
   background: url("../img/svg-sedona/calendar.svg") no-repeat 70% 70%;
 background-color: #f2f2f2;}
 .input-with-icon1{
-  width: 346px;
+  width: 345px;
   border: none;
   outline: none;
-  min-height: 39px;}
-input[name="date-in"] {
-    width: 307px;
-    border: none;
-    outline: none;
+  min-height: 38px;}
+input[name="date-out"] {
+  width: 307px;
+      max-height: 38px;
+      border: none;
+      outline: none;
+      text-transform: uppercase;
+      padding: 12px;
+      font-weight: 700;
     -webkit-appearance: none;
     vertical-align: middle;
   background-color: #f2f2f2;}
-input [value="calendar"] {
-  width: 39px;
-  height: 39px;
+input [name="calendar-2"] {
+  width: 38px;
+  height: 38px;
   border: none;
   background: url("../img/svg-sedona/calendar.svg") no-repeat 70% 70%;
 background-color: #f2f2f2;}
+button.grey{
+font: inherit;
+font-size: 24px;
+font-weight: bold;
+text-align: center;
+color: #a9a9a9;
+vertical-align: center;
+text-transform: uppercase;
+background-color: #f2f2f2;
+border: none;
+width: 38px;
+height: 38px;
+}
+input[name=number-of-persons]{
+  font: inherit;
+font-size: 14px;
+text-align: center;
+color: #000000;
+vertical-align: center;
+text-transform: uppercase;
+background-color: #f2f2f2;
+border: none;
+width: 38px;
+height: 38px;
+}
+input[name="number-of-children"]{
+  font: inherit;
+font-size: 14px;
+text-align: center;
+color: #000000;
+vertical-align: center;
+text-transform: uppercase;
+background-color: #f2f2f2;
+border: none;
+width: 38px;
+height: 38px;
+}
 /*формы с календариком с главной страницы - end*/
 footer{margin: 0;
     padding: 0;
