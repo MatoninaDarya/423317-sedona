@@ -20,24 +20,28 @@ body{
     background-color: #fff;
     box-shadow: 0 0 15px 5px rgba(0,0,0,.2);
 }
-header{
-display: inline-block;
-width: 1200;
-}
+
 div .border-image{
   display: block;
   width:1200;
   height: 591;
 }
-.border-image::after{
+.welcome-sedona{
+  position: relative;
+}
+.welcome-sedona::after{
   content:"";
-  width: 1200px;
+  display: block;
+  width: 100%;
   height: 57px;
-  background: url(".../img/figure border.png") no-repeat;
+  position: absolute;
+  bottom: 7px;
+  left:50%;
+  transform: translateX(-50%);
+  background: url("../img/figure-border.png");
 }
 ul{
   list-style-type: none;
-  display: block;
 }
 a{
   text-decoration: none;
@@ -64,34 +68,15 @@ a{
  padding: 0;
  border: 0;
 }
-.site-navigation{
-padding: 0;
-margin: 0;
-font-size: 0;
-}
+
 .logo-sedona{
   position: absolute;
   top: 0;
   z-index: 10;
   left: 50%;
-  margin-left: -69px;
+  transform: translateX(-50%);
   width: 140px;
   height: auto;
-}
-.site-navigation li{
-  display: inline-block;
-  vertical-align: top;
-  list-style: none;
-  list-style-type: none;
-  list-style-position: initial;
-  list-style-image: initial;
-  width: 20%;
-  text-align: center;
-  font-family: PT Sans,Arial,sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
 }
 /*.city-logo{
     position: absolute;
@@ -307,47 +292,52 @@ width: 38px;
 height: 38px;
 }
 /*формы с календариком с главной страницы - end*/
-.real-footer{margin: 0;
-    padding: 0;
-    background: rgba(255,255,255,.5);
-    text-align: center;}
-.insta{
-  margin: 47px 0;
-font-size: 21px;
-font-weight: 700;
-line-height: 26px;
-width: 33.33%; /*до введения флексов*/
-float: left;/*до введения флексов*/
-}
-.social-links {
-  padding-top: 36px;
-  width: 33.33%;
-  float: left;
-}
-.social-links .blue-squere{
-display: inline-block;
-vertical-align: top;
-margin: 0;
-padding: 0;
-width: 46px;
-height: 48px;
-margin-right: 5px;
-background: #81b3d2;
-color: #fff;
-text-decoration: none;}
-.htmlacademy{
-  margin: 47px 0;
-  width: 33.33%;
-  float: left;
-}
+
 /*сетки*/
+.site-navigation li{
+  list-style: none;
+  list-style-type: none;
+  list-style-position: initial;
+  list-style-image: initial;
+  width: 20%;
+  font-family: PT Sans,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.main-navigation{
+  position: relative;
+}
 .site-navigation{
   display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      padding: 15px 0;
-      margin: 0;
+ flex-flow: row wrap;
+ justify-content: flex-start;
+ padding: 15px 0;
+ margin: 0;
+ list-style: none;
 }
+.site-navigation li{
+  flex: 0 0 20%;
+}
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+    text-align: left;}
+  .site-navigation li:nth-child(3),
+  .site-navigation li:nth-child(4) {
+        text-align: right;
+    }
+.site-navigation li:nth-child(1) {
+        margin-left: 6%;
+    }
+.site-navigation li:nth-child(2) {
+        margin-right: 8%;
+    }
+
+.site-navigation li:nth-child(4n + 4) {
+        margin-right: 6%;
+    }
+
 .slogan{
 display:flex;
 flex-direction: column;
@@ -407,28 +397,85 @@ padding-right: 40px;
 .search-form-title p{
   margin-bottom: 50px;
 }
-.real-footer{
+footer{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: stretch;
+  justify-content: space-between;
+  align-items: center;
   max-height: 120px;
+  margin-top: -120px;
+  background: rgba(255,255,255,0.5);
+  padding-left: 136px;
+  padding-right: 100px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
+.insta{
+font-size: 21px;
+font-weight: 700;
+line-height: 26px;
+;}
+.social-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 152px;
+}
+
 .htmlacademy{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-basis: 200px;
   align-items: center;
-  margin-right: 100px;
-  margin-left: 100px;
+
 }
 .blue-squere{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background: #81b3d2;
+  color: #fff;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
 }
+  /*
+  .real-footer{margin: 0;
+      padding: 0;
+      background: rgba(255,255,255,.5);
+      text-align: center;}
+  .insta{
+    margin: 47px 0;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  width: 33.33%; /*до введения флексов*/
+/*  float: left;/*до введения флексов*/
+/*  }
+  .social-links {
+    padding-top: 36px;
+    width: 33.33%;
+    float: left;
+  }*/
+  /*.social-links .blue-squere{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  width: 46px;
+  height: 48px;
+  margin-right: 5px;
+  background: #81b3d2;
+  color: #fff;
+  text-decoration: none;}
+  .htmlacademy{
+    margin: 47px 0;
+    width: 33.33%;
+    float: left;
+  }
+
 
 
 /* ВТОРАЯ СТРАНИЦА СТИЛИ*/
