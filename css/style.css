@@ -24,7 +24,12 @@ header{
 display: inline-block;
 width: 1200;
 }
-.mountains::after{
+div .border-image{
+  display: block;
+  width:1200;
+  height: 591;
+}
+.border-image::after{
   content:"";
   width: 1200px;
   height: 57px;
@@ -50,12 +55,28 @@ a{
   background-color: #f2f2f2;
 }
 .visually-hidden{
-  display: none;
+  position: absolute;
+ overflow: hidden;
+ clip: rect(0 0 0 0);
+ height: 1px;
+ width: 1px;
+ margin: -1px;
+ padding: 0;
+ border: 0;
 }
 .site-navigation{
 padding: 0;
 margin: 0;
 font-size: 0;
+}
+.logo-sedona{
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  left: 50%;
+  margin-left: -69px;
+  width: 140px;
+  height: auto;
 }
 .site-navigation li{
   display: inline-block;
@@ -72,13 +93,13 @@ font-size: 0;
   line-height: 26px;
   text-transform: uppercase;
 }
-.city-logo{
+/*.city-logo{
     position: absolute;
     top: 0;
     z-index: 10;
     left: 50%;
     margin-left: -69px;
-}
+}*/
 .slogan{
   width: 640px;
     padding: 0 75px;
@@ -186,8 +207,8 @@ button .braun:active{
   background-color: #503e33;
 }
 input.blue{
-  display: block
-  color: #ffffff;
+  display: block;
+  color: white;
   text-decoration: none;
   text-align: center;
   background-color: #81b3d2;
@@ -286,11 +307,11 @@ width: 38px;
 height: 38px;
 }
 /*формы с календариком с главной страницы - end*/
-footer{margin: 0;
+.real-footer{margin: 0;
     padding: 0;
-    background: rgba(255,255,255,.9);
+    background: rgba(255,255,255,.5);
     text-align: center;}
-footer span{
+.insta{
   margin: 47px 0;
 font-size: 21px;
 font-weight: 700;
@@ -303,7 +324,7 @@ float: left;/*до введения флексов*/
   width: 33.33%;
   float: left;
 }
-.social-links a{
+.social-links .blue-squere{
 display: inline-block;
 vertical-align: top;
 margin: 0;
@@ -315,6 +336,205 @@ background: #81b3d2;
 color: #fff;
 text-decoration: none;}
 .htmlacademy{
+  margin: 47px 0;
   width: 33.33%;
   float: left;
+}
+/*сетки*/
+.site-navigation{
+  display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      padding: 15px 0;
+      margin: 0;
+}
+.slogan{
+display:flex;
+flex-direction: column;
+justify-content: center;
+min-height: 216px;
+align-items: center;
+}
+.slogan h1{
+max-width: 441px;
+}
+.items-with-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 330px;
+  align-items: center;
+}
+.items-with-icons li{
+max-width: 400px;
+display: flex;
+flex-direction: column;
+align-content: center;
+padding-left: 40px;
+padding-right: 40px;
+}
+.items-with-icons p{
+  max-width: 303px;
+}
+.items-without-icons{
+  display: flex;
+  min-height: 256px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.items-without-icons div{
+  max-width: 400px;
+  padding-left: 96px;
+  padding-right: 96px;
+  align-items: center;
+}
+.items-without-icons h3{
+  font-size: 21px;
+}
+.search-form-title{
+  display: flex;
+  min-width: 292px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 55px;
+}
+.search-form-title h2{
+  font-size: 30px;
+  margin-bottom: 29px;
+}
+.search-form-title p{
+  margin-bottom: 50px;
+}
+.real-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  max-height: 120px;
+}
+.htmlacademy{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-basis: 200px;
+  align-items: center;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.blue-squere{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ВТОРАЯ СТРАНИЦА СТИЛИ*/
+.blur-and-choice{
+  display: flex;
+  flex-direction: row;
+  min-height: 218px;
+  background-color: #5f95bd;
+  padding-top: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  /*background-image: url(../img/blur.jpg) no-repeat 100% auto;*/
+}
+.blur-and-choice p{
+  font-weight: 700;
+}
+.blur-and-choice .price1{
+  font-weight: 700;
+}
+.blur-and-choice form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-width: 1056px;
+}
+.blur-and-choice .form-left{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.blur-and-choice .form-middle{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.blur-and-choice .form-right{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.form-left div{
+  margin-bottom: 20px;
+}
+.search-results{
+  display: flex;
+  flex-direction: column;
+  min-height: 540px;
+}
+.filters{
+  display: flex;
+  flex-direction: row;
+ min-height: 87px;
+ justify-content: space-around;
+}
+.filters-items{
+  display: flex;
+  flex-direction: row;
+}
+input [name="number-of-hotels"]{
+  height: 20px;
+  width: 15px;
+}
+.hotels .hotel {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 20px 6%;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.hotels .hotel:first-child {
+  border-top: 2px solid whitesmoke;
+}
+
+.hotels .hotel-photo {
+  flex: 0 0 135px;
+  margin: 0;
+  margin-right: 30px;
+}
+
+.hotel-photo img {
+  display: block;
+}
+
+.hotels .hotel-info {
+  display: flex;
+  flex-direction: flex-start;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex: 1 1 auto;
+  margin-right: 30px;
+}
+
+.hotels .hotel-details,
+.hotels .hotel-actions {
+  display: flex;
+}
+
+.hotels .hotel-rating {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  flex: 0 0 135px;
+}
+
+.hotels .stars,
+.hotels .score {
+  text-align: right;
 }
