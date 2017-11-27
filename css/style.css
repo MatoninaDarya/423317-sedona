@@ -320,6 +320,7 @@ height: 38px;
 .site-navigation li{
   flex: 0 0 20%;
 }
+
 .site-navigation li:nth-child(1),
 .site-navigation li:nth-child(2) {
     text-align: left;}
